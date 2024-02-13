@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/css/yes_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="second_text">
+            <h1 class = "header_text">Hurray, thank you!</h1>
+        </div>
+        <div class="gif_container">
+            <img src="./styles/images/cute-cat.gif" alt="Cute animated illustration">
+        </div>
+        <div class="second_text">
+            <h1 class = "header_text">This is for you:</h1>
+        </div>
+    </div>
+    <script>
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+        window.addEventListener('load', async() => {
+            await delay(6000);
+            window.location.href = "flowers.html";
+        });
+    </script>
+</body>
+</html>

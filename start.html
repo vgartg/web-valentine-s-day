@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/css/letter_style.css">
+
+</head>
+<body>
+<div class="envlope-wrapper">
+    <div id="envelope" class="close">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter">
+            <div class="words line1"></div>
+            <div class="words line2"></div>
+            <div class="words line3"></div>
+            <div class="words line4"></div>
+        </div>
+        <div class="hearts">
+            <div class="heart a1"></div>
+            <div class="heart a2"></div>
+            <div class="heart a3"></div>
+        </div>
+    </div>
+</div>
+<div class="reset">
+    <button id="open" onclick="openLetter()">Open!</button>
+    <script>
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+        const openLetter = async() => {
+            await delay(4000);
+            window.location.href = "question.html";
+        }
+    </script>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src="styles/js/script.js"></script>
+
+</body>
+</html>
