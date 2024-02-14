@@ -6,11 +6,12 @@ body {
     background-color: #F8C8DC;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 #noButton {
     position: absolute;
-    margin-left: 150px;
+    margin-left: 25%;
     transition: 0.5s;
 }
 .text {
@@ -25,7 +26,7 @@ body {
 
 #yesButton {
     position: absolute;
-    margin-right: 150px;
+    margin-right: 45%;
 }
 
 .header_text {
@@ -79,5 +80,4 @@ img {
 
 #yesButton {
     position: absolute;
-    right: 850px;
 }
